@@ -1,0 +1,18 @@
+return {
+  "AstroNvim/astrocommunity",
+  { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = false },
+  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = false },
+  { import = "astrocommunity.colorscheme.rose-pine", enabled = false },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.python-ruff" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.pack.zig" },
+}
