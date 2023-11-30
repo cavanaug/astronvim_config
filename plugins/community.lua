@@ -15,4 +15,5 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.scrolling.mini-animate" },
 }
