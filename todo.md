@@ -1,3 +1,14 @@
+### Priority
+
+- Basic Mappings
+- Opening page
+- Neotree
+- Help navigation
+- Folding
+- Settings
+- Final mappings
+- Code browsing
+
 ### diffview
 
 something for resolving merges and examining diffs in git/hg
@@ -22,12 +33,6 @@ nnoremap z<space><space> za
 
 ### Mappings
 
-Setup a tab tab mapping for quickswitch between 2 visible splits
-
-let mapleader=" "
-let maplocalleader=","
-let maplocalleader = ','
-
 #### what are these for
 
 nmap > :cnext
@@ -46,6 +51,7 @@ Plug 'tyru/open-browser.vim', {'on':'OpenBrowser'}
 
 #### What are these for
 
+set listchars=tab:▸\ ,eol:¬
 set noshowcmd
 set noshowmode
 set noerrorbells
@@ -153,6 +159,7 @@ noremap <silent> <return><return> :nohlsearch<CR>
 "########### NormalMode/Leader - Macros
 map <leader>! 0i:r!"ndd@n
 map <leader>@ "myy@m
+
 " Shortcuts for adding pre/post chars to a word
 map <leader>" ebi"ea"b
 map <leader>' ebi'ea'b
