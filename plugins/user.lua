@@ -4,6 +4,7 @@ return {
     -- timeout = vim.o.timeoutlen, -- the time in which the keys must be hit in ms. Use option timeoutlen by default
     clear_empty_lines = true, -- clear line after escaping if there is only whitespace
   },
+  --  require("nvim-ufo").setup { },
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   -- "andweeb/presence.nvim",

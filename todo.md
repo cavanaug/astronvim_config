@@ -1,11 +1,9 @@
 ### Priority
 
-- Basic Mappings
 - Opening page
 - Neotree
 - Help navigation
 - Folding
-- Settings
 - Final mappings
 - Code browsing
 
@@ -42,10 +40,7 @@ can i reuse these for help navigation vs spc-enter and spc-backspace?
 
 ### Plugins to research
 
-Plug 'tomasr/molokai' "Everything else seems to suck
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
-Plug 'matze/vim-ini-fold', {'for':['ini', 'dosini']}
-Plug 'tyru/open-browser.vim', {'on':'OpenBrowser'}
 
 ### Settings
 
@@ -66,18 +61,14 @@ set modeline
 
 #### Are these useful??
 
-set smartcase
 set incsearch
-set showmatch
 set hlsearch
-
-"set formatoptions=qrn1
-set colorcolumn=120
 "let &showbreak='↪ '
 
 #### vim-json
 
 let g:vim_json_syntax_conceal = 1
+set showmatch
 
 " Fancy ANSI Chars Reference █
 " ▉
@@ -182,7 +173,6 @@ map <silent> \b (jmx)kmy\uindent<CR>(
 map <silent> \E :%!expand -<CR>
 map <silent> \f {j!}par 120<CR>}be
 map <silent> \I :%!indent<CR>1G
-map <silent> \i [[?^$<CR>mx]]]]?^}<CR>my\uindent<CR>[[
 " Help/Docs
 map <silent> \h :!grep ^"# ~/.vimrc<CR>
 map <silent> \H :tabnew<CR>:help<CR>:wincmd j<CR>:q<CR>
