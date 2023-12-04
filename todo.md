@@ -1,5 +1,6 @@
 ### Priority
 
+- Copy buffer (set up shortcuts for local & windows)
 - Help navigation
 - Final mappings
 - Folding (understand ufo preview)
