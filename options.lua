@@ -5,7 +5,14 @@ return {
     scrolloff = 3, -- give at least 3 lines of text before/after active line
     signcolumn = "yes", -- sets vim.opt.signcolumn to auto
     spell = false, -- sets vim.opt.spell
-    wrap = true, -- sets vim.opt.wrap
+    wrap = true,
+    modeline = true,
+    writebackup = true,
+    cursorline = true,
+    cursorcolumn = true,
+    backupdir = "$HOME/.local/state/nvim/backup/",
+    undodir = "$HOME/.local/state/nvim/undo/",
+    conceallevel = 2,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
