@@ -1,5 +1,6 @@
 return {
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.colorscheme.catppuccin", enable = true },
   { import = "astrocommunity.colorscheme.gruvbox-nvim", enable = true },
   { import = "astrocommunity.colorscheme.gruvbox-baby", enable = true },
