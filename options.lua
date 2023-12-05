@@ -11,7 +11,7 @@ return {
     writebackup = true,
     cursorline = true,
     cursorcolumn = true,
-    backupdir = "/home/cavanaug/.local/state/nvim/backup/,.",
+    backupdir = "/home/cavanaug/.local/state/nvim/backup/",
     undodir = "/home/cavanaug/.local/state/nvim/undo/,.",
     conceallevel = 2,
   },
