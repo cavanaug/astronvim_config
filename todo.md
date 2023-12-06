@@ -1,10 +1,19 @@
-### Priority
+## Top Level
+
+### Todo Items
 
 - Copy buffer (set up shortcuts for local & windows)
 - Help navigation
 - Final mappings
 - Folding (understand ufo preview)
 - Neotree (understand full path)
+
+### Tolearn Items
+
+- quickfix
+- noice (do I really want it)
+
+## Backlog
 
 ### diffview
 
@@ -13,21 +22,14 @@ maybe switch to vim-signify from gitsigns
 
 ### Neotree
 
-Setup a mapping for cycling thru file/git/etc
-Setup a mapping (docs) for showing current file in tree
+Write a neotree panel to show Info such as name, folder, possibly do something for buffers also
 
 ### Folding
 
 Need to set highlight for the fold marker to be more visible for folded lines
-set foldcolumn=3
-is there a way to set a marker with hidden text for deleted lines
-
-set foldenable
-set foldcolumn=3
-set foldlevelstart=4
-set foldminlines=1
-set foldmethod=marker
 nnoremap z<space><space> za
+
+Ive got something for now, but could really use a bit more visibility on the fold info
 
 ### Mappings
 
@@ -87,7 +89,7 @@ let g:signify_sign_delete = '✘'
 let g:signify_sign_delete_first_line = '✘'
 let g:signify_sign_change = '~'
 
-#### Tags
+#### Tags and navigation
 
 Can these be set per buffer? Like help?
 
