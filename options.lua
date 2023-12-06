@@ -10,7 +10,7 @@ return {
     backup = true,
     writebackup = true,
     cursorline = true,
-    cursorcolumn = true,
+    -- cursorcolumn = true,
     backupdir = ".bkp,/home/cavanaug/.local/state/nvim/backup/",
     undodir = "/home/cavanaug/.local/state/nvim/undo/,.",
     conceallevel = 2,

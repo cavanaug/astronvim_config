@@ -46,7 +46,7 @@ return {
 
     -- Support Neotree Explorer favorites
     ["<leader>e"] = {
-      "<cmd>Neotree source=filesystem selector=false reveal<cr>",
+      "<cmd>Neotree source=filesystem selector=false reveal_force_cwd<cr>",
       desc = "Neotree Explorer (.)",
     },
     ["<leader>E"] = {
