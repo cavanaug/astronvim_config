@@ -4,9 +4,11 @@
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
 return {
-  -- first key is the mode
-  -- second key is the lefthand side of the map
+  --
+  -- Normal Mode Maps
+  --
   n = {
+    --
     -- navigate buffer tabs with `H` and `L`
     L = {
       function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
@@ -16,6 +18,11 @@ return {
       function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end,
       desc = "Previous buffer",
     },
+
+    ["<A-k>"] = { function() require("smart-splits").resize_up() end, desc = "Resize split up" },
+    ["<A-j>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
+    ["<A-h>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
+    ["<A-l>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
@@ -33,12 +40,9 @@ return {
     -- Quick Mappings
     -- quick File Ops
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
-    ["gf"] = { ":wincmd F<cr>", desc = "Go to file under cursor" },
+    ["gf"] = { ":wincmd F<cr>", desc = "Go to file:line under cursor" },
 
     -- quick switch windows (Im not so sure about this long term as it seems to conflict with other things)
-    -- ["<tab><tab>"] = { ":wincmd p<cr>", desc = "Go to previous window" },
-    -- ["<tab>l"] = { ":tabnext<cr>", desc = "Go to next tab" },
-    -- ["<tab>h"] = { ":tabprev<cr>", desc = "Go to prev tab" },
     ["<leader><tab>"] = { ":tabnext<cr>", desc = "Go to next tab" },
 
     -- Support my old surround muscle memory
@@ -75,9 +79,14 @@ return {
       end,
       desc = "Toggle Explorer Focus",
     },
+
     -- Faster access to common items
     ["<C-Space>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle Term" },
   },
+
+  --
+  -- Terminal Window Maps
+  --
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
