@@ -74,6 +74,14 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
+    -- Things I didnt know how to convert to Lua but I still want
+    vim.cmd [[
+      "************** Default Tab Settings
+       set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+
+      autocmd BufNewFile,BufRead *.avsc setfiletype json
+      autocmd BufNewFile,BufRead *.rss *.atom setfiletype xml
+]]
     -- Set up custom filetypes
     -- vim.filetype.add {
     --   extension = {
