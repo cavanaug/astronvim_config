@@ -1,11 +1,22 @@
 -- set vim options here (vim.<first_key>.<second_key> = value)
 return {
   opt = {
+    relativenumber = true, -- sets vim.opt.relativenumber
+    number = true, -- sets vim.opt.number
+    spell = false, -- sets vim.opt.spell
+    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    wrap = true, -- sets vim.opt.wrap
+    conceallevel = 2, -- enable conceal
+    foldenable = false,
+    foldexpr = "nvim_treesitter#foldexpr()", -- set Treesitter based folding
+    foldmethod = "expr",
+    -- foldmethod = "expr,indent",
+    linebreak = true, -- linebreak soft wrap at words
+    list = true, -- show whitespace characters
+    listchars = { tab = " ", extends = "⟩", precedes = "⟨", trail = "·", eol = "¬" },
+    showbreak = "↪ ",
     foldcolumn = "2", -- set the foldclolumn width
     scrolloff = 3, -- give at least 3 lines of text before/after active line
-    signcolumn = "yes", -- sets vim.opt.signcolumn to auto
-    spell = false, -- sets vim.opt.spell
-    wrap = true,
     modeline = true,
     backup = true,
     writebackup = true,
@@ -13,7 +24,6 @@ return {
     -- cursorcolumn = true,
     backupdir = ".bkp,/home/cavanaug/.local/state/nvim/backup/",
     undodir = "/home/cavanaug/.local/state/nvim/undo/,.",
-    conceallevel = 2,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
