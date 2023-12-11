@@ -2,7 +2,7 @@
 
 A user configuration template for [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-## 🛠️ Installation
+## 🛠️ Installationn
 
 #### Make a backup of your current nvim and shared folder
 

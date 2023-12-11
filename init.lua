@@ -18,7 +18,10 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "vscode",
+  colorscheme = "slate",
+  -- colorscheme = "sonokai",
+  -- colorscheme = "github_dark_tritanopia",
+  -- -- colorscheme = "vscode",
   -- colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
