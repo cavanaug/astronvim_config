@@ -18,8 +18,9 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "slate",
+  colorscheme = "rose-pine-main",
   -- colorscheme = "sonokai",
+  -- colorscheme = "slate",
   -- colorscheme = "github_dark_tritanopia",
   -- -- colorscheme = "vscode",
   -- colorscheme = "catppuccin",
