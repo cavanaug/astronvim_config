@@ -23,7 +23,7 @@ return {
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     spell = false, -- sets vim.opt.spell
     undodir = "/home/cavanaug/.local/state/nvim/undo/,.",
-    wrap = true,
+    wrap = true, -- sets vim.opt.wrap
     writebackup = true,
   },
   g = {
