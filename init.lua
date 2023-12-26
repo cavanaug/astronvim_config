@@ -22,7 +22,7 @@ return {
   -- colorscheme = "sonokai",
   -- colorscheme = "slate",
   -- colorscheme = "github_dark_tritanopia",
-  -- -- colorscheme = "vscode",
+  -- colorscheme = "vscode",
   -- colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
