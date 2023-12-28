@@ -41,10 +41,25 @@ return {
       },
     },
   },
+
   {
     "projekt0n/github-nvim-theme",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
+  },
+
+  -- opts = { symbol = "╎", options = { try_as_border = true } },
+  -- opts = { symbol = "", options = { try_as_border = true } },
+  -- opts = { symbol = "║", options = { try_as_border = true } },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl", --
+    opts = {
+      indent = { char = "┆" },
+      -- indent = { char = "" },
+      -- indent = { char = "╎" },
+      -- indent = { char = "┃" },
+    },
   },
 
   require("better_escape").setup {
@@ -56,6 +71,10 @@ return {
   require("illuminate").configure {
     under_cursor = true,
     min_count_to_highlight = 2,
+  },
+
+  require("mini.indentscope").setup {
+    symbol = "│",
   },
 
   -- require("lspconfig")["yamlls"].setup {
