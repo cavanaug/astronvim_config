@@ -18,12 +18,12 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "rose-pine-main",
+  -- colorscheme = "rose-pine-main",
   -- colorscheme = "sonokai",
   -- colorscheme = "slate",
   -- colorscheme = "github_dark_tritanopia",
   -- colorscheme = "vscode",
-  -- colorscheme = "catppuccin",
+  colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
