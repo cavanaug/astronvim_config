@@ -81,6 +81,8 @@ return {
 
       autocmd BufNewFile,BufRead *.avsc setfiletype json
       autocmd BufNewFile,BufRead *.rss *.atom setfiletype xml
+      autocmd FileType lazy lua require("lsp_lines").toggle()
+      autocmd FileType mason lua require("lsp_lines").toggle()
 ]]
     -- Set up custom filetypes
     -- vim.filetype.add {

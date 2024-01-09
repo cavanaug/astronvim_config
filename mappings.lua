@@ -23,6 +23,10 @@ return {
     ["<A-j>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
     ["<A-h>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
     ["<A-l>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
+    ["<C-Up>"] = false,
+    ["<C-Down>"] = false,
+    ["<C-Left>"] = false,
+    ["<C-Right>"] = false,
 
     -- mappings seen under group name "Buffer"
     ["<leader>bD"] = {
@@ -40,6 +44,7 @@ return {
     -- Quick Mappings
     -- quick File Ops
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
+    ["g"] = { name = "Go to ..." },
     ["gf"] = { ":wincmd F<cr>", desc = "Go to file:line under cursor" },
 
     -- quick switch windows (Im not so sure about this long term as it seems to conflict with other things)
