@@ -21,7 +21,7 @@ return {
   { "rose-pine/neovim", lazy = false },
   { import = "astrocommunity.colorscheme.sonokai" },
   { "sainnhe/sonokai", lazy = false },
-  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  -- { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },

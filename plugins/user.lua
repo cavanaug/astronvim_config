@@ -1,4 +1,5 @@
 return {
+  { "samoshkin/vim-mergetool", lazy = false },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",

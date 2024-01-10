@@ -76,13 +76,12 @@ return {
   polish = function()
     -- Things I didnt know how to convert to Lua but I still want
     vim.cmd [[
-      "************** Default Tab Settings
-       set tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-
       autocmd BufNewFile,BufRead *.avsc setfiletype json
       autocmd BufNewFile,BufRead *.rss *.atom setfiletype xml
-      autocmd FileType lazy lua require("lsp_lines").toggle()
-      autocmd FileType mason lua require("lsp_lines").toggle()
+      "autocmd FileType lazy lua require("lsp_lines").toggle()
+      "autocmd FileType mason lua require("lsp_lines").toggle()
+      let g:mergetool_layout = 'mr'
+      let g:mergetool_prefer_revision = 'local'
 ]]
     -- Set up custom filetypes
     -- vim.filetype.add {
