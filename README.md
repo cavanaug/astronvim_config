@@ -8,6 +8,10 @@
 - Final mappings
 - Folding (understand ufo preview & color highlighting)
 - Neotree (understand full path)
+- nvim-window-picker
+- smart-splits
+- neoconf
+-
 
 ### Tolearn Items
 

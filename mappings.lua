@@ -44,6 +44,31 @@ return {
     -- Quick Mappings
     -- quick File Ops
     ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
+
+    --
+    --   Merge/Diff Mappings
+    --
+    -- Note: This is entirely predicated on a 3-way merge as I use for git/mercurial
+    --       It assumes a model of  LOCAL | BASE | OTHER   on top with the MERGED on the bottom
+    --       It also assumes that   LOCAL | BASE | OTHER   are RO, and that only MERGED IS RW
+    --
+    -- .gitconfig settings
+    --     [merge]
+    --     tool = nvimdiff
+    --     conflictstyle = diff3
+    -- .hgrc settings
+    --     [merge-tools]
+    --     vimdiff.executable = nvimdiff
+    --     vimdiff.args = -f -d $output -M $local $base $other -c "wincmd J" -c "set modifiable" -c "set write"
+    --     vimdiff.premerge = keep
+    ["<leader>m"] = { name = "Merge/Diff" },
+    ["<leader>mo"] = { ":diffget other<cr>", desc = "Merge <other> diff" },
+    ["<leader>ml"] = { ":diffget local<cr>", desc = "Merge <local> diff" },
+    ["<leader>mb"] = { ":diffget base<cr>", desc = "Merge <base>  diff" },
+    ["<leader>mp"] = { ":diffput<cr>", desc = "Merge <this> diff" },
+    ["<leader>mc"] = { ":wincmd J<cr>wqa<cr>", desc = "Merge complete..." },
+    ["<leader>ma"] = { ":cqa!<cr>", desc = "Merge abandoned..." },
+
     ["g"] = { name = "Go to ..." },
     ["gf"] = { ":wincmd F<cr>", desc = "Go to file:line under cursor" },
 
