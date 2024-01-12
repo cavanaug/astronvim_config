@@ -40,4 +40,5 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.debugging.nvim-bqf" },
 }

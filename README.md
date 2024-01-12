@@ -14,6 +14,9 @@
 - quickfix
 - noice (do I really want it)
 - open file under cursor
+- neoclip
+- lsp-colors
+- trouble
 
 ## Backlog
 
