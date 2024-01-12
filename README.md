@@ -8,6 +8,7 @@
 - Final mappings
 - Folding (understand ufo preview & color highlighting)
 - Neotree (understand full path)
+-
 
 ### Tolearn Items
 
@@ -17,6 +18,9 @@
 - neoclip
 - lsp-colors
 - trouble
+- nvim-window-picker
+- smart-splits
+- neoconf
 
 ## Backlog
 
