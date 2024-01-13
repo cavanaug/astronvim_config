@@ -43,7 +43,7 @@ return {
 
     -- Quick Mappings
     -- quick File Ops
-    ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
+    ["<C-s>"] = { "<cmd>w!<cr>", desc = "Save File" },
 
     --
     --   Merge/Diff Mappings
@@ -62,18 +62,18 @@ return {
     --     vimdiff.args = -f -d $output -M $local $base $other -c "wincmd J" -c "set modifiable" -c "set write"
     --     vimdiff.premerge = keep
     ["<leader>m"] = { name = "Merge/Diff" },
-    ["<leader>mo"] = { ":diffget remote<cr>", desc = "Merge <remote> diff" },
-    ["<leader>ml"] = { ":diffget local<cr>", desc = "Merge <local> diff" },
-    ["<leader>mb"] = { ":diffget base<cr>", desc = "Merge <base>  diff" },
-    ["<leader>mp"] = { ":diffput<cr>", desc = "Merge <this> diff" },
-    ["<leader>mc"] = { ":wincmd j<cr>wqa<cr>", desc = "Merge complete..." },
-    ["<leader>ma"] = { ":cqa!<cr>", desc = "Merge abandoned..." },
+    ["<leader>mo"] = { "<cmd>diffget remote<cr>", desc = "Merge <remote> diff" },
+    ["<leader>ml"] = { "<cmd>diffget local<cr>", desc = "Merge <local> diff" },
+    ["<leader>mb"] = { "<cmd>diffget base<cr>", desc = "Merge <base>  diff" },
+    ["<leader>mp"] = { "<cmd>diffput<cr>", desc = "Merge <this> diff" },
+    ["<leader>mc"] = { "<cmd>wincmd j<cr>wqa<cr>", desc = "Merge complete..." },
+    ["<leader>ma"] = { "<cmd>cqa!<cr>", desc = "Merge abandoned..." },
 
     ["g"] = { name = "Go to ..." },
-    ["gf"] = { ":wincmd F<cr>", desc = "Go to file:line under cursor" },
+    ["gf"] = { "<cmd>wincmd F<cr>", desc = "Go to file:line under cursor" },
 
     -- quick switch windows (Im not so sure about this long term as it seems to conflict with other things)
-    ["<leader><tab>"] = { ":tabnext<cr>", desc = "Go to next tab" },
+    ["<leader><tab>"] = { "<cmd>tabnext<cr>", desc = "Go to next tab" },
 
     -- Support my old surround muscle memory
     ["<leader>s"] = { "gzaiw", desc = "Surround <nextchar>", remap = true },

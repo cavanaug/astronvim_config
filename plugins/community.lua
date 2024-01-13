@@ -31,6 +31,8 @@ return {
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { import = "astrocommunity.editing-support.chatgpt-nvim" },
+  { import = "astrocommunity.completion.copilot-lua" },
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.leap-nvim" },
