@@ -14,10 +14,12 @@
 
 - quickfix
 - noice (do I really want it)
-- open file under cursor
+- open file under cursor gff
+- trouble
+- marks (why not showing in signcolumns? conflict with git signs??)
+- ultimate-autopair
 - neoclip
 - lsp-colors
-- trouble
 - nvim-window-picker
 - smart-splits
 - neoconf

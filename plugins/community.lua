@@ -30,9 +30,21 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.indent.mini-indentscope" },
+  { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.motion.marks-nvim" },
+  { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  { import = "astrocommunity.editing-support.telescope-undo-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.editing-support.chatgpt-nvim" },
+<<<<<<< HEAD
   -- { import = "astrocommunity.completion.copilot-lua" },
+||||||| parent of 1ae9bf5 (More mappings & pde)
+  { import = "astrocommunity.completion.copilot-lua" },
+=======
+  { import = "astrocommunity.completion.copilot-lua" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+>>>>>>> 1ae9bf5 (More mappings & pde)
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.tabout-nvim" },

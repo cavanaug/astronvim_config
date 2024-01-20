@@ -62,7 +62,7 @@ return {
     --     vimdiff.args = -f -d $output -M $local $base $other -c "wincmd J" -c "set modifiable" -c "set write"
     --     vimdiff.premerge = keep
     ["<leader>m"] = {
-      name = "Merge/Diff",
+      name = " Merge/Diff",
       o = { "<cmd>diffget remote<cr>", desc = "Merge <remote> diff" },
       l = { "<cmd>diffget local<cr>", desc = "Merge <local> diff" },
       b = { "<cmd>diffget base<cr>", desc = "Merge <base>  diff" },
