@@ -63,16 +63,16 @@ return {
     --     vimdiff.premerge = keep
     ["<leader>m"] = {
       name = " Merge/Diff",
-      o = { "<cmd>diffget remote<cr>", desc = "Merge <remote> diff" },
-      l = { "<cmd>diffget local<cr>", desc = "Merge <local> diff" },
-      b = { "<cmd>diffget base<cr>", desc = "Merge <base>  diff" },
-      p = { "<cmd>diffput<cr>", desc = "Merge <this> diff" },
-      c = { "<cmd>wincmd j<cr>wqa<cr>", desc = "Merge complete..." },
-      a = { "<cmd>cqa!<cr>", desc = "Merge abandoned..." },
+      r = { "<cmd>diffget REMOTE<cr>", desc = "Merge <REMOTE> diff", mode = { "n", "v" } },
+      l = { "<cmd>diffget LOCAL<cr>", desc = "Merge <LOCAL> diff", mode = { "n", "v" } },
+      b = { "<cmd>diffget BASE<cr>", desc = "Merge <BASE>  diff", mode = { "n", "v" } },
+      p = { "<cmd>diffput<cr>", desc = "Merge <THIS> diff", mode = { "n", "v" } },
+      c = { "<cmd>wincmd j<cr>wqa<cr>", desc = "Merge complete...", mode = { "n", "v" } },
+      q = { "<cmd>cqa!<cr>", desc = "Merge abandoned...", mode = { "n", "v" } },
     },
 
     ["<leader>a"] = {
-      name = "AI/ChatGPT",
+      name = "󰧑 AI/ChatGPT",
       c = { "<cmd>ChatGPT<CR>", "ChatGPT" },
       e = { "<cmd>ChatGPTEditWithInstruction<CR>", "Edit with instruction", mode = { "n", "v" } },
       g = { "<cmd>ChatGPTRun grammar_correction<CR>", "Grammar Correction", mode = { "n", "v" } },
