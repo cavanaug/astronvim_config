@@ -17,7 +17,7 @@ return {
     list = true, -- show whitespace characters
     listchars = { tab = " ", extends = "⟩", precedes = "⟨", trail = "·", eol = "¬" },
     modeline = true,
-    number = true, -- sets vim.opt.number
+    number = false, -- sets vim.opt.number
     relativenumber = true, -- sets vim.opt.relativenumber
     scrolloff = 3, -- give at least 3 lines of text before/after active line
     showbreak = "↪ ",

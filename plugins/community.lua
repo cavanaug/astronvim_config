@@ -41,7 +41,7 @@ return {
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.motion.mini-surround" },
-  -- { import = "astrocommunity.motion.tabout-nvim" },
+  { import = "astrocommunity.motion.tabout-nvim" },
   { import = "astrocommunity.motion.marks-nvim" },
   --  { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
