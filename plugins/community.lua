@@ -43,8 +43,8 @@ return {
   { import = "astrocommunity.motion.mini-surround" },
   { import = "astrocommunity.motion.tabout-nvim" },
   { import = "astrocommunity.motion.marks-nvim" },
-  --  { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.flash-nvim" },
+  --  { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
   { import = "astrocommunity.debugging.nvim-bqf" },
   --
