@@ -7,25 +7,32 @@ return {
     conceallevel = 2, -- enable conceal
     cursorline = true,
     -- cursorcolumn = true,
-    foldcolumn = "2", -- set the foldclolumn width
-    foldenable = false,
-    foldexpr = "nvim_treesitter#foldexpr()", -- set Treesitter based folding
-    -- foldmethod = "expr,indent",
-    foldmethod = "expr",
     ignorecase = true,
     linebreak = true, -- linebreak soft wrap at words
     list = true, -- show whitespace characters
     listchars = { tab = " ", extends = "⟩", precedes = "⟨", trail = "·", eol = "¬" },
     modeline = true,
     number = false, -- sets vim.opt.number
-    relativenumber = true, -- sets vim.opt.relativenumber
-    scrolloff = 3, -- give at least 3 lines of text before/after active line
+    relativenumber = false, -- sets vim.opt.relativenumber
+    scrolloff = 5, -- give at least 3 lines of text before/after active line
     showbreak = "↪ ",
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     spell = false, -- sets vim.opt.spell
     undodir = "/home/cavanaug/.local/state/nvim/undo/,.",
     wrap = true, -- sets vim.opt.wrap
     writebackup = true,
+
+    -- Treesitter folding
+    -- foldcolumn = "2", -- set the foldclolumn width
+    -- foldenable = true,
+    -- foldmethod = "expr",
+    -- foldexpr = "nvim_treesitter#foldexpr()", -- set Treesitter based folding
+
+    -- Ufo folding
+    foldcolumn = "2",
+    foldlevel = 99,
+    foldlevelstart = -1,
+    foldenable = true,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
