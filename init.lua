@@ -22,8 +22,9 @@ return {
   -- colorscheme = "sonokai",
   -- colorscheme = "slate",
   -- colorscheme = "github_dark_tritanopia",
-  colorscheme = "vscode",
+  -- colorscheme = "vscode",
   -- colorscheme = "catppuccin",
+  colorscheme = "catppuccin-mocha",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -78,7 +79,7 @@ return {
     vim.cmd [[
       autocmd BufNewFile,BufRead *.avsc setfiletype json
       autocmd BufNewFile,BufRead *.rss *.atom setfiletype xml
-      autocmd FileType markdown setlocal ts=2 sts=2 sw=2
+      "autocmd FileType markdown setlocal ts=2 sts=2 sw=2
       "autocmd FileType lazy lua require("lsp_lines").toggle()
       "autocmd FileType mason lua require("lsp_lines").toggle()
       "let g:mergetool_layout = 'mr'

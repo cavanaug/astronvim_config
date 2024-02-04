@@ -88,7 +88,7 @@ return {
       l = { "<cmd>ChatGPTRun code_readability_analysis<CR>", "GPT Code Readability Analysis", mode = { "n", "v" } },
     },
 
-    ["g"] = { name = "Go to ..." },
+    ["g"] = { name = "Go..." },
     ["gf"] = { "<cmd>wincmd F<cr>", desc = "Go to file:line under cursor" },
 
     -- quick switch windows (Im not so sure about this long term as it seems to conflict with other things)

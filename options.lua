@@ -8,6 +8,7 @@ return {
     cursorline = true,
     -- cursorcolumn = true,
     ignorecase = true,
+    smartcase = true,
     linebreak = true, -- linebreak soft wrap at words
     list = true, -- show whitespace characters
     listchars = { tab = " ", extends = "⟩", precedes = "⟨", trail = "·", eol = "¬" },
@@ -16,7 +17,7 @@ return {
     relativenumber = false, -- sets vim.opt.relativenumber
     scrolloff = 5, -- give at least 3 lines of text before/after active line
     showbreak = "↪ ",
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
+    signcolumn = "yes", -- sets vim.opt.signcolumn to auto
     spell = false, -- sets vim.opt.spell
     undodir = "/home/cavanaug/.local/state/nvim/undo/,.",
     wrap = true, -- sets vim.opt.wrap
@@ -29,7 +30,7 @@ return {
     -- foldexpr = "nvim_treesitter#foldexpr()", -- set Treesitter based folding
 
     -- Ufo folding
-    foldcolumn = "2",
+    foldcolumn = "auto",
     foldlevel = 99,
     foldlevelstart = -1,
     foldenable = true,
