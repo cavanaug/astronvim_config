@@ -130,7 +130,11 @@ return {
     },
 
     -- Faster access to common items
-    ["<C-Space>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle Term" },
+    -- ["<C-Space>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle Term" },
+    ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" },
+    ["<C-Space>"] = { "za", desc = "Toggle fold under cursor" },
+    ["<C-Enter>"] = { "<C-]>", desc = "Step into topic" },
+    ["<C-BS>"] = { "<C-T>", desc = "Step out of topic" },
   },
 
   --
@@ -141,6 +145,7 @@ return {
     -- ["<esc>"] = false,
     --
     -- Faster access to common items
-    ["<C-Space>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle Term" },
+    -- ["<C-Space>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle Term" },
+    ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle Term" },
   },
 }
