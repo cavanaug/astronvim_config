@@ -1,5 +1,5 @@
 return {
-  { "samoshkin/vim-mergetool" },
+  { "samoshkin/vim-mergetool", enabled = false },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
@@ -62,11 +62,57 @@ return {
       -- indent = { char = "┃" },
     },
   },
+
   {
     "roobert/tabtree.nvim",
     enabled = false,
     config = function() require("tabtree").setup() end,
   },
+
+  {
+    "sustech-data/wildfire.nvim",
+    event = "VeryLazy",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    opts = {},
+  },
+
+  {
+    "piersolenski/wtf.nvim",
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+    },
+    opts = {},
+
+    keys = {
+      { "<leader>aw", function() require("wtf").ai() end, desc = "GPT WTF Diagnostic" },
+      { "<leader>aW", function() require("wtf").search() end, desc = "Google WTF Diagnostic" },
+    },
+  },
+
+  {
+    -- This isnt working
+    "kosayoda/nvim-lightbulb",
+    lazy = false,
+  },
+
+  {
+    -- This isnt working
+    "aznhe21/actions-preview.nvim",
+    config = function() vim.keymap.set({ "v", "n" }, "<leader>lA", require("actions-preview").code_actions) end,
+  },
+
+  {
+    -- This isnt working
+    "ray-x/lsp_signature.nvim",
+    condition = false,
+    event = "VeryLazy",
+    opts = {},
+    config = function(_, opts) require("lsp_signature").setup(opts) end,
+  },
+
+  -- require("nvim-lightbulb").init {
+  --   autocmd = { enabled = true },
+  -- },
 
   require("better_escape").setup {
     mapping = { "kj", "jj" }, -- a table with mappings to use
