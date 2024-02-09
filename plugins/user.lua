@@ -63,6 +63,8 @@ return {
     },
   },
 
+  --  { "ii14/neorepl.nvim" },
+
   {
     "roobert/tabtree.nvim",
     enabled = false,

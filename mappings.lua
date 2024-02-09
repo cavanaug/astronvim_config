@@ -91,6 +91,41 @@ return {
     ["g"] = { name = "Go..." },
     ["gf"] = { "<cmd>wincmd F<cr>", desc = "Go to file:line under cursor" },
 
+    ["<leader>fC"] = false,
+    ["<leader>fe"] = { function() require("telescope.builtin").commands() end, desc = "Find ex commands" },
+    ["<leader>fa"] = {
+      function()
+        local cwd = vim.fn.stdpath "config" .. "/.."
+        local search_dirs = {}
+        for _, dir in ipairs(astronvim.supported_configs) do -- search all supported config locations
+          if vim.fn.isdirectory(dir) == 1 then table.insert(search_dirs, dir) end -- add directory to search if exists
+        end
+        if vim.tbl_isempty(search_dirs) then -- if no config folders found, show warning
+          require("astronvim.utils").utils.notify("No user configuration files found", vim.log.levels.WARN)
+        else
+          if #search_dirs == 1 then cwd = search_dirs[1] end -- if only one directory, focus cwd
+          require("telescope.builtin").find_files {
+            prompt_title = "Config Files",
+            search_dirs = search_dirs,
+            cwd = cwd,
+            follow = true,
+          } -- call telescope
+        end
+      end,
+      desc = "Find AstroNvim config files",
+    },
+    ["<leader>fp"] = {
+      function()
+        local cwd = vim.fn.stdpath "data" .. "/lazy"
+        require("telescope.builtin").find_files {
+          prompt_title = "Plugin Config Files",
+          cwd = cwd,
+          follow = true,
+        } -- call telescope
+      end,
+      desc = "Find Astrovim plugin files",
+    },
+
     -- quick switch windows (Im not so sure about this long term as it seems to conflict with other things)
     ["<leader><tab>"] = { "<cmd>tabnext<cr>", desc = "Go to next tab" },
 
