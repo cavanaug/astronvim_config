@@ -94,6 +94,7 @@ return {
   {
     -- This isnt working
     "kosayoda/nvim-lightbulb",
+    enabled = false,
     lazy = false,
   },
 
@@ -106,7 +107,7 @@ return {
   {
     -- This isnt working
     "ray-x/lsp_signature.nvim",
-    condition = false,
+    enabled = false,
     event = "VeryLazy",
     opts = {},
     config = function(_, opts) require("lsp_signature").setup(opts) end,

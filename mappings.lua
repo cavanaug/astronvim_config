@@ -23,6 +23,7 @@ return {
     ["<A-j>"] = { function() require("smart-splits").resize_down() end, desc = "Resize split down" },
     ["<A-h>"] = { function() require("smart-splits").resize_left() end, desc = "Resize split left" },
     ["<A-l>"] = { function() require("smart-splits").resize_right() end, desc = "Resize split right" },
+    ["<C-c>"] = { "<cmd>close<cr>", desc = "Close split" },
     ["<C-Up>"] = false,
     ["<C-Down>"] = false,
     ["<C-Left>"] = false,
@@ -71,6 +72,7 @@ return {
       q = { "<cmd>cq!<cr>", "Merge quit/abandon...", mode = { "n", "v" } },
     },
 
+    -- AI Mappings
     ["<leader>a"] = {
       name = "󰧑 AI/ChatGPT",
       c = { "<cmd>ChatGPT<CR>", "ChatGPT" },
@@ -91,6 +93,7 @@ return {
     ["g"] = { name = "Go..." },
     ["gf"] = { "<cmd>wincmd F<cr>", desc = "Go to file:line under cursor" },
 
+    -- Telescope Mappings
     ["<leader>fC"] = false,
     ["<leader>fe"] = { function() require("telescope.builtin").commands() end, desc = "Find ex commands" },
     ["<leader>fa"] = {
@@ -114,7 +117,7 @@ return {
       end,
       desc = "Find AstroNvim config files",
     },
-    ["<leader>fp"] = {
+    ["<leader>fA"] = {
       function()
         local cwd = vim.fn.stdpath "data" .. "/lazy"
         require("telescope.builtin").find_files {
