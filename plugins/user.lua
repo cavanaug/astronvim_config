@@ -42,7 +42,7 @@ return {
       },
     },
   },
-
+  { "folke/neodev.nvim", opts = {} },
   {
     "projekt0n/github-nvim-theme",
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -115,9 +115,9 @@ return {
   -- },
 
   require("better_escape").setup {
-    mapping = { "kj", "jj" }, -- a table with mappings to use
-    timeout = vim.o.timeoutlen, -- the time in which the keys must be hit in ms. Use option timeoutlen by default
-    clear_empty_lines = true, -- clear line after escaping if there is only whitespace
+    mapping = { "kj", "jj" },
+    timeout = vim.o.timeoutlen,
+    clear_empty_lines = true,
   },
 
   require("illuminate").configure {
