@@ -49,9 +49,6 @@ return {
     priority = 1000, -- make sure to load this before all the other start plugins
   },
 
-  -- opts = { symbol = "╎", options = { try_as_border = true } },
-  -- opts = { symbol = "", options = { try_as_border = true } },
-  -- opts = { symbol = "║", options = { try_as_border = true } },
   {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl", --

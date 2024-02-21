@@ -95,6 +95,10 @@ return {
 
     -- Telescope Mappings
     ["<leader>fC"] = false,
+    ["<leader>fp"] = {
+      function() require("telescope").extensions.projects.projects {} end,
+      desc = "Find project repos ",
+    },
     ["<leader>fe"] = { function() require("telescope.builtin").commands() end, desc = "Find ex commands" },
     ["<leader>fa"] = {
       function()

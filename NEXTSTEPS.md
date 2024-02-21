@@ -1,5 +1,15 @@
 ## Cavanaugh Top Level
 
+### Next Items
+
+- History command with fzf
+- Folke flash fix /
+- Surround chars with the lsp select
+- Help, autocmd to determine vert or horizontal
+- Hydra plugin (rotate, motion, diff, quickfix)
+- Project/Harpoon
+- noice (do I really want it), what about vscode cmd window keybind
+
 ### Todo Items
 
 - Typing practice, uncommon sequences that need to become automatic \[\]/,.\<>
@@ -8,7 +18,6 @@
     - motion w, b, }, {
   - Next/Prev (Perhaps look at modal)
     - \]d \]c
-- Copy buffer (set up shortcuts for local & windows)
 - Help navigation
   - Figure out how to set custom mappings in help files.
 - Final mappings
@@ -20,10 +29,8 @@
 ### Tolearn Items
 
 - quickfix
-- noice (do I really want it)
 - open file under cursor gff
 - trouble
-- marks (why not showing in signcolumns? conflict with git signs??)
 - ultimate-autopair
 - neoclip
 - lsp-colors
@@ -64,7 +71,8 @@ can i reuse these for help navigation vs spc-enter and spc-backspace?
 #### Are these useful??
 
 ```
-" Fancy ANSI Chars Reference █
+" Fancy ANSI Chars Reference
+""
 " ▉
 " ╔══╦══╗ ┌──┬──┐ ╭──┬──╮ ╭──┬──╮ ┏━━┳━━┓ ╱╲╱╲╳╳╳ ▊
 " ║┌─╨─┐║ │╔═╧═╗│ │╒═╪═╕│ │╓─╁─╖│ ┃┌─╂─┐┃ ╲╱╲╱╳╳╳ ▋
@@ -101,19 +109,13 @@ map <Space><Return> \<C-\]> map <Space><BS> <C-T>
 
 ### Autocommands
 
-"########### NormalMode - Load up a bunch of my favorite macros
+### NormalMode/Leader
 
-" Lazy settings " Make searching a little easier/cleaner nnoremap <silent> n nzz " Make search
-next/prev be centered vertically nnoremap <silent> N Nzz " Make search next/prev be centered
-vertically
-
-"########### NormalMode/Leader - Macros map <leader>! 0i:r!"ndd@n map <leader>@ "myy@m
-
-map <silent> / dePo/\<pA>"wdd@w " map <silent> \\H :tabnew<CR>:help<CR>:wincmd j<CR>:q<CR> " map
-<leader>U :%! map <leader>u :'x,'y! " Lazy Quickkeys map <leader>R :%s/ map <leader>r :'x,'ys/
-
-"# \\b - Indent current block ( ie { } ) # "# \\i - Indent current function/procedure (Assumes basic
-formatting) # "# \\f - Format paragraph # "# \\F - Format entire document # "# \< - Shift x -> y
-region 1 tab stop left # "# > - Shift x -> y region 1 tab stop right # "# , - Shift x -> y region 1
-space left # "# . - Shift x -> y region 1 space right #
-"###############################################################################
+- \\b - Indent current block ( ie { } )
+- \\i - Indent current function/procedure (Assumes basic formatting)
+- \\f - Format paragraph
+- \\F - Format entire document
+- \< - Shift x -> y region 1 tab stop left
+- > - Shift x -> y region 1 tab stop right
+- , - Shift x -> y region 1 space left
+- . - Shift x -> y region 1 space right

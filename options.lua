@@ -3,7 +3,8 @@ return {
   opt = {
     backup = true,
     backupdir = ".bkp,/home/cavanaug/.local/state/nvim/backup/",
-    clipboard = "unnamed",
+    -- clipboard = "unnamed",
+    clipboard = "",
     conceallevel = 2, -- enable conceal
     cursorline = true,
     -- cursorcolumn = true,
