@@ -100,9 +100,8 @@ return {
     vim.cmd [[
       autocmd BufNewFile,BufRead *.avsc setfiletype json
       autocmd BufNewFile,BufRead *.rss *.atom setfiletype xml
-      "autocmd FileType markdown setlocal ts=2 sts=2 sw=2
-      "autocmd FileType lazy lua require("lsp_lines").toggle()
-      "autocmd FileType mason lua require("lsp_lines").toggle()
+      autocmd BufNewFile,BufRead *.json setfiletype jsonc
+      "autocmd BufNewFile,BufRead *.json set filetype=jsonc
       "let g:mergetool_layout = 'mr'
       ""let g:mergetool_prefer_revision = 'local'
 ]]
