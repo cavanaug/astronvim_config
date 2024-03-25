@@ -102,6 +102,7 @@ return {
       autocmd BufNewFile,BufRead *.avsc setfiletype json
       autocmd BufNewFile,BufRead *.rss *.atom setfiletype xml
       autocmd BufNewFile,BufRead *.json setfiletype jsonc
+      autocmd bufwritepost tmux.conf execute ':!tmux source-file %'
       "autocmd BufNewFile,BufRead *.json set filetype=jsonc
       "let g:mergetool_layout = 'mr'
       ""let g:mergetool_prefer_revision = 'local'
